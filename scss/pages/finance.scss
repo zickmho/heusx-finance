@@ -1,0 +1,200 @@
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    
+
+    & + & {
+        border-top: 1px solid rgba(167,167,167,0.23);
+    }
+
+    &__img {
+        width: 46px;
+        height: 46px;
+        margin-right: 12px;
+    }
+
+    &__details {
+        .item-title {
+            margin-bottom: 2px;
+        }
+    }
+
+    &__stats {
+        margin-left: auto;
+        text-align: right;
+
+        .item-stats {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+.currency {
+    > a {
+        opacity: 0.4;
+        font-weight: 500;
+    }
+
+    .active {
+        opacity: 1;
+    }
+}
+
+.iwo-logo {
+    border-radius: 30px;
+    width: 24px;
+    height: 24px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+
+    }
+}
+
+.thumbnail-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: $color-yellow;
+    border-radius: 50%;
+}
+.thumbnail-with-shadow {
+    box-shadow: 0 0 0 24px rgba(255,255,255,0.05), 0 0 0 12px rgba(255,255,255,0.05); 
+    border-radius: 50%;    
+}
+
+.block-bar {
+    background: #3F3F40;
+    padding: 12px 0;
+}
+
+.timeline {
+    display: flex;
+    width: 100%;
+    font-size: 8px;
+    
+    &__item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .timeline-bullet:before {
+            content: "";
+            height: 4px;
+            background-color: #636363;
+            width: 100%;
+            position: absolute;
+            top: calc(50%);
+            z-index: -1;
+            left: 0;
+            right: 0;
+
+            .timeline-small & {
+                top: calc(50% - 5px)
+            }
+        }
+
+        &:first-child .timeline-bullet:before,
+        &:last-child .timeline-bullet:before{
+            width: 50%;
+            
+        }
+
+        &:first-child .timeline-bullet:before {
+            left: 50%;            
+        }
+
+        &:last-child .timeline-bullet:before {
+            right: 50%;
+        }
+
+    }
+
+    &-title {
+        margin-bottom: 16px;
+
+        .timeline-small & {
+            font-weight: 700;
+        }
+    }
+
+    &-bullet {
+        background: $color-yellow;
+        width: 20px;
+        height: 20px;
+        box-shadow: 0 0 0 4px rgba(255,228,87,0.24);
+        border-radius: 50%;
+
+        .timeline-small & {
+            width: 10px;
+            height: 10px;
+            box-shadow: none;
+        }
+    }
+
+    &-date {
+        margin-top: 12px;
+
+        .timeline-small & {
+            font-weight: 700;
+        }
+    }   
+
+    &-time {
+        font-size: 6px;
+    }
+}
+
+
+.info {
+    background: #3F3F40;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 8px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.subscribe-product {
+    margin: 24px 0;
+
+    .image-placeholder {
+        width: 77px;
+        height: 77px;
+        background: $white;
+        border-radius: 50%;
+        overflow:hidden;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
+}
+
+.separator-text {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    padding-top: 12px;
+
+    > div:not(.separator-content) {
+        height: 2px;
+        width: 100%;
+        background-color: $color-yellow;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    }
+
+    .separator-content {
+        flex: 1 0 auto;
+        padding-left: 8px;
+        padding-right: 8px; 
+    }
+}

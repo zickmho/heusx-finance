@@ -1,0 +1,35 @@
+.heusx-table {
+    font-size: 8px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+
+    td {
+        padding: 4px;
+    }
+
+    thead {
+        td {
+            color: $white;
+            font-weight: 700;
+            padding-bottom: 16px;
+        }
+    }
+
+    tbody {
+        td {
+           
+            background: rgba(72,72,72,0.3);
+        }
+
+        tr > td {
+            &:first-child {
+                border-radius: 4px 0 0 4px;
+            }
+
+            &:last-child {
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+}

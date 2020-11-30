@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 375 209">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.195" y1="0.678" x2="0.859" y2="0.13" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7d97a"/>
+      <stop offset="1" stop-color="#f7d779"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.195" y1="0.678" x2="0.859" y2="0.13" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7d175"/>
+      <stop offset="1" stop-color="#f8d477"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.195" y1="0.678" x2="0.859" y2="0.13" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7c971"/>
+      <stop offset="1" stop-color="#f7d677"/>
+    </linearGradient>
+    <clipPath id="clip-Artboard_3">
+      <rect width="375" height="209"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_3" data-name="Artboard – 3" clip-path="url(#clip-Artboard_3)">
+    <path id="Path_237" data-name="Path 237" d="M545.909,359.4V513.653l187.5,54.375,187.5-54.375V359.4Z" transform="translate(-545.909 -359.401)" fill="url(#linear-gradient)"/>
+    <path id="Path_257" data-name="Path 257" d="M545.909,359.4v158.4l200.436,55.839,200.437-55.839V359.4Z" transform="matrix(0.966, -0.259, 0.259, 0.966, -665.928, -233.083)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_258" data-name="Path 258" d="M545.909,359.4v158.4l200.436,55.839,200.437-55.839V359.4Z" transform="translate(-556.614 -508.148)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

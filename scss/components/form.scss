@@ -1,0 +1,50 @@
+.form-underline {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid $white;
+    border-radius: 0;
+    font-size: 10px;
+    color: $white !important;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    &:focus {
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.form-control-xs {
+    height: 20px;
+}
+
+.input-dark {
+    background: rgba(#404043, 0.36);
+    border-radius: 2px;
+    font-size: 10px;
+    color: $white;
+    outline: 0;
+    border: 0;
+    padding: 3px 5px;    
+
+    &:focus {
+        background: #404043;
+    }
+
+    &:not(.password-key) {
+        background: rgba(#404043, 0.86);
+    }
+}
+
+.input-block {
+    display: block;
+    width: 100%;
+}
+.password-key {
+    width: 36px;
+    height: 36px;    
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+}

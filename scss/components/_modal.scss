@@ -1,0 +1,118 @@
+.modal-dialog {
+    margin: 1.2rem;
+}
+
+.modal-xs .modal-dialog {
+    max-width: 300px;
+    margin: 20% auto;
+}
+
+.modal-content {
+    border-radius: 12px;
+    border: 0;
+}
+
+
+.modal-backdrop {
+    background-color: #373739;
+
+    &.show {
+        opacity: 0.75;
+    }
+}
+
+.modal-yellow {
+    color: $base-bg;
+
+    .modal-content {
+        background-color: $color-yellow;
+    }
+
+    .modal-header {
+        border-bottom: 0;
+    }
+}
+
+.modal-authenticate {
+    .modal-content {
+        background-color:transparent;
+    }
+
+    .modal-body {
+        background-color: #6C7274;
+        border-radius: 12px;
+    }
+
+    .modal-header {
+        border-bottom: 0;
+    }
+
+    .modal-dialog {
+        margin: 50% auto;
+    }
+}
+
+.modal-success {
+
+    .modal-content {
+        background: rgba(#2C2E36, 0.8);
+    }
+
+    .modal-header {
+        border-bottom: 0;
+        .close {
+            color: $white;
+            font-weight: 300;
+        }
+    }
+}
+
+.modal-subscribe {
+    .modal-dialog {
+        height: calc(100% - 2.4rem); 
+        
+        &:after {
+            content: "";
+            background:url(../images/modal-bottom-decorator.svg) 0 0 no-repeat;
+            left: -1.2rem;
+            right: -1.2rem;
+            bottom: -1.2rem;            
+            height: 80px;
+            position: absolute;
+        }
+    }
+
+    .modal-content {
+        background: rgba(#5A5849,0.85);
+        border: 1px solid $color-yellow;
+        height: 100%;
+        padding-bottom: 120px;
+
+        
+    }
+
+    .subscribe-content {
+        background-color: $white;
+        border-radius: 12px;
+        color: $base-bg;
+        font-weight: 400;
+        padding: 1rem;
+        padding-bottom: 1.5rem;
+        position: relative;  
+        z-index: 2;      
+
+        .close {
+            position: absolute;
+            right: 8px;
+            top: 2px;
+            padding: 3px;            
+            outline: 0 !important;
+            box-shadow: none !important;
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 375 277">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.639" y2="0.658" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdb6d" stop-opacity="0.478"/>
+      <stop offset="1" stop-color="#ffdd70" stop-opacity="0.702"/>
+    </linearGradient>
+    <clipPath id="clip-Artboard_2">
+      <rect width="375" height="277"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_2" data-name="Artboard – 2" clip-path="url(#clip-Artboard_2)">
+    <g id="Group_588" data-name="Group 588" transform="translate(2 25)">
+      <path id="Path_253" data-name="Path 253" d="M832.6,633.063c-44.887,26.187-113.846,31.884-113.849,31.884-69.233,4.61-223.175-28.91-223.175-28.91C386.456,606.5,364.912,721.46,346.263,711.89q-16.288-8.359-10.1-44.85a46.978,46.978,0,0,0,.714-7.881V465.39c0-45.6,46.127-82.556,103.025-82.556H763.671c56.9,0,103.025,36.96,103.025,82.556V583.038a46.071,46.071,0,0,1-7.018,24.667l-.108.173C851.389,620.818,839.876,628.816,832.6,633.063Z" transform="translate(-313.483 -560.579) rotate(8)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

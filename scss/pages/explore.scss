@@ -1,0 +1,35 @@
+.slider {
+    position: relative;
+    top: -20px;
+    margin-top:-50px;
+}
+
+.explore-item {
+    color: $white !important;
+    text-align: left;
+    padding: 14px 0;
+    
+    &__thumbnail {
+        width: 40px;
+        height: 40px;
+        border: 2px solid $color-yellow;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 28px;
+            max-height: 28px;
+        }
+    }
+
+    &__details {
+        margin-left: 12px;
+        flex: 1;
+    }
+
+    &__icon {
+        margin-left: auto;
+    }
+}

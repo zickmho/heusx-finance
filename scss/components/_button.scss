@@ -1,0 +1,176 @@
+.btn {
+    border: 0 !important;
+    outline: none;
+    font-size: $base-font-size !important;
+    
+    &:focus, 
+    &:active {
+        box-shadow: none;
+    }
+
+    ~ .btn {
+        margin-left: 8px;
+    }
+}
+
+.btn-circle {
+    background-color: $white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    position: relative;
+    box-shadow: 0 -1px 20px rgba(65,78,109, 0.3);
+    transition:.2s ease all;
+
+    &.animate {
+        animation: spin 2s ease;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: calc(50% - 12px);
+        left: calc(50% - 12px);
+        border-radius: 58px;
+        // border: 2px solid #FFD717;        
+        // border-spacing: 20px;
+        // border-style: dashed;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23FFD717' stroke-width='4' stroke-dasharray='12%2c 12.5' stroke-dashoffset='3' stroke-linecap='square'/%3e%3c/svg%3e");
+
+    }
+
+    &.btn-circle-small {
+        transform: scale(0.8);
+    }
+}
+
+
+.finance-top-btn {
+    .btn {
+        padding: 0;
+        color: $white;
+
+        > img {
+            border-radius: 50px;
+        }
+    }
+
+    .btn-new-item {
+        position: relative;
+
+        &:before {
+            content: "NEW";
+            position: absolute;
+            top: -4px;
+            padding: 2px 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 6px;
+            background: $base-bg;
+            border-radius: 4px;
+            border: 1px solid #F85C81; 
+        }
+
+        > img {
+            box-shadow: 0 0 0 3px $base-bg, 0 0 0 4px #F85C81;
+        }
+    }
+}
+
+.btn-primary {
+    background-color: $button-bg;
+    color: $button-text;
+    border-radius: 20px;
+
+    &:hover, {
+        background-color: darken($button-bg,5) !important;
+        color: $button-text !important;
+    }
+
+    &:active,    
+    &:focus {
+        background-color: darken($button-bg,5) !important;
+        color: $button-text !important;
+        box-shadow: 0 0 0 4px rgba(darken($color-yellow, 5), 0.2) !important;
+    }
+
+    &:disabled {
+        background-color: #464646 !important;
+        color: $white !important;
+        opacity: 0.3;
+    }
+}
+
+.btn-radius {
+    border-radius: 30px !important;
+}
+
+.btn-white {
+    background-color: $white;
+    color: $button-text;
+    border-radius: 20px;
+}
+
+.btn-danger {
+    background-color: $white;
+    color: #EC5151;
+    border-radius: 20px;
+}
+
+.btn-outline {
+    border: 1px solid $white !important;
+    background: transparent;
+    color: $white;
+
+    &:not(.btn-outline-dark) {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    }
+}
+
+.btn-outline-yellow {
+    border: 1px solid #e5ca40 !important;
+    background: $white;
+    color: $base-bg;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-large {
+    padding: 8px 48px;
+    font-weight: 600;
+}
+
+.btn-outline-dark {
+    border-color: #241F29 !important;
+    color: $button-text;
+}
+
+.btn-small {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 8px;
+}
+
+.btn-social {
+    border: 1px solid $base-bg !important;
+    border-radius: 40px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}

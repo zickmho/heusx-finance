@@ -1,0 +1,96 @@
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+// text-size controls
+$texts : ("1": 16px, "2":12px, "3": 10px, "4":8px, "5":7px, "6":6px);
+
+@each $name, $size in $texts {
+    .text-#{$name} {
+        font-size: $size;
+    }
+}
+
+.text-24 {
+    font-size: 24px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+
+.text-yellow {
+    color: $color-yellow;
+}
+
+.text-white {
+    color: $white !important;
+}
+
+.text-green {
+    color: #6EFFB2;
+}
+
+.text-red {
+    color: #FF4678;
+}
+
+.alpha-4 {
+    opacity: 0.4;
+}
+
+.alpha-6 {
+    opacity: 0.6;
+}
+
+.font-weight-thin {
+    font-weight: 300;
+}
+
+.font-weight-regular {
+    font-weight: 400;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.divider-large {
+    border-bottom: 4px solid rgba(73,73,77,0.3);
+    margin: 12px 0;
+}
+
+.divider {
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    margin: 12px 0;
+}
+
+.border-right {
+    border-right: 1px solid #ECECEC;
+}
+
+.radius-10 {
+    border-radius: 10px !important;
+}
+
+.radius-5 {
+    border-radius: 5px !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.z-index-1 {
+    z-index: 1;
+    position: relative;
+}

@@ -1,0 +1,17 @@
+.container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.carousel-indicators {
+    bottom: -55px;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    height: 130px;
+}
+
+.carousel-indicators li {
+    background-color: $color-yellow;
+}

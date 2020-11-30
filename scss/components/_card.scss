@@ -1,0 +1,20 @@
+.card {
+    border-radius: 16px;
+    padding: 20px;
+
+    &.card-dark {
+        background: rgba(72,72,72,0.29);
+        box-shadow: 0 -5px 10px rgba(0,0,0,0.16);
+
+        .btn-circle {
+            &:after {
+                background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23423C5A' stroke-width='4' stroke-dasharray='12%2c 12.5' stroke-dashoffset='3' stroke-linecap='square'/%3e%3c/svg%3e");
+            }
+        }
+        
+    }
+}
+
+.card-bordered {
+    border: 1px solid $color-yellow;
+}
